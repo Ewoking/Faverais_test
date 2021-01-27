@@ -13,9 +13,16 @@ body {
   background: rgb(20, 14, 71);
 }
 
-#gradient-bg-wrapper {
+#gradient-wrapper {
   position: absolute;
   width: 100%;
+  height: 100vh;
+  z-index: -1;
+  overflow: hidden;
+  background-repeat: no-repeat;
+}
+
+#gradient {
   height: 2000px;
   background: linear-gradient(
     10deg,
@@ -25,7 +32,6 @@ body {
     rgba(191, 15, 122, 1) 72%,
     rgba(255, 170, 0, 1) 100%
   );
-  z-index: -1;
 }
 
 #mainname {
@@ -68,7 +74,7 @@ body {
 
 #mainsection {
   width: 80%;
-  height: 2000px;
+  height: 1000px;
   margin: auto;
   background-color: rgb(255, 255, 255);
   border-radius: 50px;

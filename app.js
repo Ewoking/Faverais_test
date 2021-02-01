@@ -1,6 +1,7 @@
 var degrade = document.querySelector("#gradient-wrapper");
 
 backgroundResize();
+
 window.onresize = function(e){
     console.log(e);
     backgroundResize();

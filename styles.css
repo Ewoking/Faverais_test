@@ -72,6 +72,22 @@ body {
   transition: 0.3s ease-in-out;
 }
 
+.onglet p::after {
+  content: "";
+  width: 0%;
+  height: 3px;
+  position: relative;
+  margin: auto;
+  display: block;
+  background-color: rgb(2, 82, 211);
+  transition: 0.3s ease-in-out;
+}
+
+.onglet:hover p::after {
+  width: 100%;
+  transition: 0.3s ease-in-out;
+}
+
 #mainsection {
   width: 80%;
   height: 1500px;
